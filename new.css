@@ -1,0 +1,35 @@
+body{
+    padding: 0;
+}
+.wrapper{
+    height: 100vh;
+   
+    overflow-x: hidden;overflow-y: auto;
+    z-index: -3;
+    perspective: 10px;
+}
+.background,
+.foureground{
+    width: 100%;height: 100%;object-fit: cover;position: absolute ;z-index: -1;
+}
+header{
+    position: relative;
+    height: 100%;
+    display: flex;justify-content: center;align-items: center;
+   transform-style: preserve-3d;
+    z-index: -3;
+}
+h1{
+    font-size: 3rem;color: azure;
+}
+section{
+   padding: 2rem;font-size: 2rem;background: rgb(43, 41, 41);
+color: azure;
+}
+
+.background{
+   transform: translateZ(-10px) scale(2);
+}
+.foureground{
+    transform: translateZ(-5px) scale(1.5);
+ }
